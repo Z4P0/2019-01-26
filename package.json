@@ -9,7 +9,15 @@
   "scripts": {
     "test": "echo $npm_package_config_test",
     "html": "pug --pretty index.pug",
-    "html:watch": "pug --pretty --watch index.pug"
+    "html:watch": "pug --pretty --watch index.pug",
+    "css": "node-sass --output css/ scss/",
+    "postcss": "postcss css/styles.css --no-map --use autoprefixer --use css-mqpacker --use cssnano --output css/styles.min.css",
+    "css:watch": "node-sass --watch --source-map true --output css/ scss/",
+    "regular-server": "http-server --silent -o",
+    "live-reload": "live-server --quiet --port=4040 --watch=*.html,css/",
+    "servers": "npm run live-reload & npm run regular-server",
+    "watch": "npm run html:watch & npm run css:watch",
+    "build": "npm run html && npm run css"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +31,8 @@
     "autoprefixer": "^9.4.6",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.8",
+    "http-server": "^0.11.1",
+    "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.1",
     "pug": "^2.0.3",
