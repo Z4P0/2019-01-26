@@ -1935,6 +1935,7 @@ template {
 
 @font-face {
   font-family: 'd-din';
+  font-display: swap;
   src: url("../assets/D-DINCondensed-Bold.woff2") format("woff2"), url("../assets/D-DINCondensed-Bold.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
