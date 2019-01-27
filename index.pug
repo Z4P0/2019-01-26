@@ -4,10 +4,10 @@ html(lang="en").no-js
     meta(charset="utf-8")
     meta(http-equiv="x-ua-compatible", content="ie=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
-    title title
-    meta(name="description", content="description")
-    link(rel="preload", href="css/styles.css", as="style")
-    link(rel="stylesheet", href="css/styles.css")
+    title disappear
+    meta(name="description", content="disappear type poster webpage")
+    link(rel="preload", href="css/styles.min.css", as="style")
+    link(rel="stylesheet", href="css/styles.min.css")
     style html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}body{font-family:Arial,sans-serif;background-color:#1f1f1f;color:#5f6366;line-height:1.5;position:relative}img{max-width:100%}.container{margin:5vh auto;padding-left:5vw;padding-right:5vw}@media print,screen and (min-width:64em){.container{width:40%}}
 
   body
@@ -15,7 +15,14 @@ html(lang="en").no-js
     //- a(href="#main").show-for-sr Skip to main content
 
     .container
-      img(src="assets/D154PP34R.jpg", alt="")
+      //- img(src="assets/D154PP34R.jpg", alt="")
+      //- https://www.responsivebreakpoints.com/
+      img(sizes="(max-width: 1400px) 100vw, 1400px",
+        srcset="assets/D154PP34R--w_522.jpg 200vw, assets/D154PP34R--w_964.jpg 964w, assets/D154PP34R.jpg, 1200w"
+        src="assets/D154PP34R.jpg",
+        alt="")
+
+
       main#main.main
         h1.f-headline Disappear
         //- p This is a webpage
