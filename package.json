@@ -1,0 +1,27 @@
+{
+  "name": "disappear-poster-webpage",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "test": "hello world"
+  },
+  "scripts": {
+    "test": "echo $npm_package_config_test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.5.2",
+    "normalize.css": "^8.0.1",
+    "tachyons-sass": "^4.9.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.6",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.8",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.1"
+  }
+}
