@@ -17,7 +17,8 @@
     "live-reload": "live-server --quiet --port=4040 --watch=*.html,css/",
     "servers": "npm run live-reload & npm run regular-server",
     "watch": "npm run html:watch & npm run css:watch",
-    "build": "npm run html && npm run css"
+    "build": "npm run html && npm run css",
+    "dev": "npm run servers & npm run watch"
   },
   "keywords": [],
   "author": "",
