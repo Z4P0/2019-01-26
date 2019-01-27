@@ -7,7 +7,9 @@
     "test": "hello world"
   },
   "scripts": {
-    "test": "echo $npm_package_config_test"
+    "test": "echo $npm_package_config_test",
+    "html": "pug --pretty index.pug",
+    "html:watch": "pug --pretty --watch index.pug"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,8 @@
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.8",
     "node-sass": "^4.11.0",
-    "postcss-cli": "^6.1.1"
+    "postcss-cli": "^6.1.1",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
