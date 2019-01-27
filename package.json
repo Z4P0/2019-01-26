@@ -35,6 +35,7 @@
     "http-server": "^0.11.1",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
+    "penthouse": "^1.10.2",
     "postcss-cli": "^6.1.1",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
